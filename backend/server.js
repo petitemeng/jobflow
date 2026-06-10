@@ -5,7 +5,9 @@ import pg from 'pg';
 const app = express();
 const { Pool } = pg;
 
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 app.use(express.json());
 
 const pool = new Pool({
