@@ -1,6 +1,6 @@
 import { Job, Stats } from './types'
 
-const BASE = '/api'
+const BASE = 'https://jobflow-api-pepc.onrender.com/api'
 
 export const api = {
   getJobs: (): Promise<Job[]> =>
